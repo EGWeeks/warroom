@@ -1,11 +1,13 @@
 <div ng-init='HC.getServer()'>
 	{{ HC.title }}
-	<ul ng-repeat='server in HC.servers'>
-		<h3>Server {{ server.id }}</h3>
-		<li>{{ server.cpu }}</li>
-		<li>{{ server.memory }}</li>
-		<li>{{ server.os }}</li>
-		<li>{{ server.responseTime }}</li>
-		<li>{{ server.temp }}</li>
-	</ul>
+	<div class='row'>
+		<div class='col-md-4 server'ng-repeat='server in HC.servers'>
+			<h3>Server {{ server.id }}</h3>
+			<h4 class='info'>Average Response Time "goes here"</h4>
+			<h4 class='info'>Response Time {{ server.responseTime }}</h4>
+
+		</div>
+	</div>
+
+	<p>{{ HC.blah }}</p>
 </div>
