@@ -1,0 +1,16 @@
+<div ng-init='DC.getServer()'>
+	<h3>Server {{ DC.server.name }} Id:{{ DC.server.id }}</h3>
+	<div class='row'>
+		<div class='col-md-3'>
+		</div>
+		<div class='col-md-6 server'>
+			<h4>Response Time: {{ DC.server.responseTime }}</h4>
+			<h4>OS: {{ DC.server.os }}</h4>
+			<h4>Memory: {{ DC.server.memory }}</h4>
+			<h4>CPU: {{ DC.server.cpu }}</h4>
+			<h4>Temp: {{ DC.server.temp }}</h4>
+		</div>
+		<div class='col-md-3'>
+		</div>
+	</div>
+</div>

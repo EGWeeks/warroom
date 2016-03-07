@@ -8,8 +8,8 @@ angular.module('war')
 function HomeCtrl(DataSrc) {
 
   var vm = this;
-
-  vm.getServer = function(){
+  
+  vm.getServers = function(){
   	setInterval(function() {
 	  	DataSrc.serverData()
 	  	.then(function(servers){
@@ -20,5 +20,7 @@ function HomeCtrl(DataSrc) {
 	  	});
   	}, 500); 
   };
+
+  vm.getServers();
 
 }

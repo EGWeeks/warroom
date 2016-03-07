@@ -1,13 +1,10 @@
-<div ng-init='HC.getServer()'>
-	{{ HC.title }}
+<div>
 	<div class='row'>
-		<div class='col-md-4 server'ng-repeat='server in HC.servers'>
-			<h3>Server {{ server.id }}</h3>
+		<div class='col-md-4 server'ng-repeat='server in HC.servers track by $index' >
+			<a href='#/{{$index}}' ><h3>Server {{ server.id }}</h3></a>
 			<h4 class='info'>Average Response Time "goes here"</h4>
 			<h4 class='info'>Response Time {{ server.responseTime }}</h4>
 
 		</div>
 	</div>
-
-	<p>{{ HC.blah }}</p>
-</div>
+</div> 
