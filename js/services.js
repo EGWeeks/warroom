@@ -8,7 +8,7 @@ angular.module('war')
 		this.serverData = function(){
 			return $http({
 				method: 'GET',
-				url: 'http://localhost:3000/'
+				url: 'https://immense-temple-49256.herokuapp.com/'
 			})
 			.then(function(response){
 				return response;
@@ -18,7 +18,7 @@ angular.module('war')
 		this.serverById = function(id){
 			return $http({
 				method: 'GET',
-				url: 'http://localhost:3000/'+ id
+				url: 'https://immense-temple-49256.herokuapp.com/'+ id
 			})
 			.then(function(response){
 				return response;

@@ -20,7 +20,7 @@ function DetailCtrl($routeParams, DataSrc) {
 	  	.catch(function(err) {
 	  		console.log(err);
 	  	});
-  	}, 500);
+  	}, 15000);
   };
 
 }

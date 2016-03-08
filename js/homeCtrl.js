@@ -18,7 +18,7 @@ function HomeCtrl(DataSrc) {
 	  	.catch(function(err) {
 	  		console.log(err);
 	  	});
-  	}, 500); 
+  	}, 15000); 
   };
 
   vm.getServers();
